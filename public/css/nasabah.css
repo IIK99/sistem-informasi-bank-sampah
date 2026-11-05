@@ -1,0 +1,579 @@
+:root {
+    --spark-dark: #0b2219;
+    --spark-card: #123326;
+    --spark-lime: #b4f105;
+    --spark-border: #e2e8f0;
+}
+
+/* NAVBAR */
+.nasabah-navbar {
+    background-color: var(--spark-dark);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nasabah-brand {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand-icon-box {
+    width: 38px;
+    height: 38px;
+    background: rgba(180, 241, 5, 0.15);
+    border: 1px solid var(--spark-lime);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--spark-lime);
+    font-size: 1.25rem;
+}
+
+.brand-text h6 {
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+.brand-text small {
+    color: var(--spark-lime);
+    font-size: 0.7rem;
+    letter-spacing: 0.02em;
+}
+
+/* MENU LINK TENGAH */
+.nasabah-navbar .nav-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: color 0.15s ease-in-out;
+}
+
+.nasabah-navbar .nav-link:hover,
+.nasabah-navbar .nav-link.active {
+    color: var(--spark-lime) !important;
+}
+
+/* TOMBOL PILL PROFIL  */
+.btn-profile-pill {
+    background-color: var(--spark-lime);
+    color: #0b2219 !important;
+    font-weight: 700;
+    font-size: 0.825rem;
+    padding: 0.45rem 1.15rem;
+    border-radius: 50rem;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-profile-pill:hover,
+.btn-profile-pill:focus {
+    filter: brightness(0.95);
+    color: #0b2219 !important;
+}
+
+/* HERO BANNER & KARTU LAYANAN */
+.hero-nasabah-card {
+    background: #fff;
+    border: 1px solid var(--spark-border);
+    border-radius: 1.25rem;
+}
+
+.badge-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(180, 241, 5, 0.15);
+    color: #0b2219;
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 50rem;
+    border: 1px solid rgba(180, 241, 5, 0.4);
+}
+
+.hero-title {
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+}
+
+.quick-action-card {
+    background: #fff;
+    border: 1px solid var(--spark-border);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.quick-action-card:hover {
+    border-color: var(--spark-lime);
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.06);
+}
+
+.action-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 0.75rem;
+    background-color: #f1f8f5;
+    color: var(--spark-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    flex-shrink: 0;
+}
+
+.quick-action-card:hover .action-icon {
+    background-color: var(--spark-lime);
+}
+
+@media (max-width: 991.98px) {
+    /* Container drawer navbar di HP */
+    #nasabahNav {
+        background-color: var(--spark-card);
+        border-radius: 1rem;
+        padding: 1.25rem 1rem;
+        margin-top: 0.75rem;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    #nasabahNav .navbar-nav {
+        gap: 0.35rem !important;
+    }
+
+    #nasabahNav .nav-link {
+        padding: 0.65rem 0.85rem !important;
+        border-radius: 0.5rem;
+        color: rgba(255, 255, 255, 0.8) !important;
+        font-size: 0.9rem !important;
+    }
+
+    #nasabahNav .nav-link:hover,
+    #nasabahNav .nav-link.active {
+        background-color: rgba(255, 255, 255, 0.08) !important;
+        color: var(--spark-lime) !important;
+    }
+
+    /* Tombol hijau stabilo profil */
+    .btn-profile-pill {
+        width: 100% !important;
+        justify-content: center;
+        padding: 0.55rem 1rem !important;
+        font-size: 0.825rem !important;
+    }
+
+    /* Kotak dropdown */
+    .nasabah-navbar .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        float: none;
+        width: 100% !important;
+        max-width: 100%;
+        margin-top: 0.5rem;
+        padding: 0.5rem 0.75rem !important;
+        background-color: rgba(0, 0, 0, 0.25) !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        border-radius: 0.75rem !important;
+        box-shadow: none !important;
+    }
+
+    /* Header nama pengguna */
+    .nasabah-navbar .dropdown-menu .fw-bold,
+    .nasabah-navbar .dropdown-menu .fw-bold.small {
+        color: #ffffff !important;
+        font-size: 0.85rem !important;
+    }
+
+    /* Username @nasabah */
+    .nasabah-navbar .dropdown-menu .text-muted {
+        color: var(--spark-lime) !important;
+        font-size: 0.75rem !important;
+        opacity: 0.9;
+    }
+
+    /* Garis pembatas */
+    .nasabah-navbar .dropdown-menu .border-bottom {
+        border-color: rgba(255, 255, 255, 0.15) !important;
+        padding-bottom: 0.4rem !important;
+        margin-bottom: 0.3rem !important;
+    }
+
+    /* Tautan menu & tombol Profil Saya */
+    .nasabah-navbar .dropdown-menu .dropdown-item {
+        color: #ffffff !important;
+        font-size: 0.85rem !important;
+        padding: 0.5rem 0.75rem !important;
+        border-radius: 0.4rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .nasabah-navbar .dropdown-menu .dropdown-item:hover {
+        background-color: rgba(255, 255, 255, 0.12) !important;
+        color: var(--spark-lime) !important;
+    }
+
+    /* Tombol Keluar */
+    .nasabah-navbar .dropdown-menu .dropdown-item.text-danger,
+    .nasabah-navbar .dropdown-menu button.text-danger {
+        color: #ff7675 !important;
+    }
+
+    .nasabah-navbar .dropdown-menu .dropdown-item.text-danger:hover,
+    .nasabah-navbar .dropdown-menu button.text-danger:hover {
+        background-color: rgba(255, 118, 117, 0.15) !important;
+        color: #ff9f9e !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .brand-icon-box {
+        width: 34px;
+        height: 34px;
+        font-size: 1.1rem;
+    }
+
+    .brand-text h6 {
+        font-size: 0.9rem;
+    }
+
+    .brand-text small {
+        display: none;
+    }
+
+    .hero-nasabah-card {
+        padding: 1.25rem 1rem !important;
+    }
+
+    .hero-title {
+        font-size: 1.45rem !important;
+    }
+
+    .card-body.p-4, .card-body.p-md-5 {
+        padding: 1.25rem 1rem !important;
+    }
+}
+
+/* ============================================================== */
+/* CAPSULE / PILL PAGINATION (Sesuai Referensi Gambar)             */
+/* ============================================================== */
+nav[aria-label*="Pagination"],
+.pagination-nav {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    width: 100%;
+}
+
+.pagination.pagination-pill,
+.pagination {
+    display: inline-flex !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+    background-color: #ededed !important;
+    border-radius: 50px !important;
+    padding: 0 !important;
+    margin: 0.5rem auto !important;
+    overflow: hidden !important;
+    border: none !important;
+    box-shadow: none !important;
+    list-style: none !important;
+    height: 40px !important;
+}
+
+.pagination.pagination-pill .page-item,
+.pagination .page-item {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.pagination.pagination-pill .page-item .page-link,
+.pagination .page-item .page-link {
+    border: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #555555 !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    padding: 0 14px !important;
+    height: 100% !important;
+    min-width: 38px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+    box-shadow: none !important;
+    line-height: 1 !important;
+}
+
+.pagination.pagination-pill .page-item.active .page-link,
+.pagination .page-item.active .page-link {
+    background-color: #74b62e !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    border-radius: 0 !important;
+}
+
+.pagination.pagination-pill .page-item:first-child .page-link,
+.pagination .page-item:first-child .page-link {
+    padding-left: 20px !important;
+    padding-right: 14px !important;
+}
+
+.pagination.pagination-pill .page-item:last-child .page-link,
+.pagination .page-item:last-child .page-link {
+    padding-right: 20px !important;
+    padding-left: 14px !important;
+}
+
+.pagination.pagination-pill .page-item.disabled .page-link,
+.pagination .page-item.disabled .page-link {
+    color: #a8a8a8 !important;
+    opacity: 0.6 !important;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+.pagination.pagination-pill .page-item:not(.active):not(.disabled) .page-link:hover,
+.pagination .page-item:not(.active):not(.disabled) .page-link:hover {
+    color: #111111 !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* ============================================================== */
+/* SMOOTH DROPDOWN TRANSITIONS (Persis Sidebar Dropdown)           */
+/* ============================================================== */
+.profile-dropdown-box,
+.nasabah-navbar .dropdown-menu {
+    border-radius: 1.15rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    animation: smoothDropdownAnim 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+    transform-origin: top right;
+}
+
+@keyframes smoothDropdownAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.97);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.profile-unified-wrapper .dropdown-item {
+    transition: all 0.18s ease;
+}
+
+.profile-unified-wrapper .dropdown-item:hover {
+    background-color: rgba(25, 135, 84, 0.08) !important;
+    color: #198754 !important;
+    transform: translateX(3px);
+}
+
+.profile-unified-wrapper .dropdown-item.text-danger:hover {
+    background-color: rgba(220, 53, 69, 0.08) !important;
+    color: #dc3545 !important;
+}
+
+/* ============================================================== */
+/* TOMBOL THEME TOGGLE (DARK / LIGHT MODE)                         */
+/* ============================================================== */
+.btn-theme-toggle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    padding: 0;
+    box-shadow: none;
+}
+
+.btn-theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(15deg);
+    color: #ffffff;
+}
+
+/* ============================================================== */
+/* TEMA DARK MODE NASABAH (data-bs-theme="dark")                   */
+/* ============================================================== */
+[data-bs-theme="dark"] body {
+    background-color: #0c1813 !important;
+    color: #e2e8f0 !important;
+}
+
+[data-bs-theme="dark"] .bg-white {
+    background-color: #12241d !important;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background-color: #0c1813 !important;
+}
+
+[data-bs-theme="dark"] .card:not(.bg-gradient) {
+    background-color: #12241d !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    color: #f1f5f9 !important;
+}
+
+[data-bs-theme="dark"] .card-header {
+    background-color: #12241d !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    color: #f8fafc !important;
+}
+
+[data-bs-theme="dark"] .hero-nasabah-card {
+    background-color: #12241d !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-bs-theme="dark"] .hero-title {
+    color: #f8fafc !important;
+}
+
+[data-bs-theme="dark"] .quick-action-card {
+    background-color: #152b22 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-bs-theme="dark"] .quick-action-card:hover {
+    border-color: var(--spark-lime) !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-bs-theme="dark"] .quick-action-card .text-dark {
+    color: #f1f5f9 !important;
+}
+
+[data-bs-theme="dark"] .quick-action-card .action-icon {
+    background: rgba(180, 241, 5, 0.12) !important;
+    color: var(--spark-lime) !important;
+}
+
+[data-bs-theme="dark"] .profile-dropdown-box {
+    background-color: #12241d !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7) !important;
+}
+
+[data-bs-theme="dark"] .profile-name-label {
+    color: #f8fafc !important;
+}
+
+[data-bs-theme="dark"] .profile-user-handle {
+    color: #94a3b8 !important;
+}
+
+[data-bs-theme="dark"] .profile-unified-wrapper .dropdown-item {
+    color: #cbd5e1 !important;
+}
+
+[data-bs-theme="dark"] .profile-unified-wrapper .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: var(--spark-lime) !important;
+}
+
+[data-bs-theme="dark"] footer {
+    background-color: #0c1813 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    color: #94a3b8 !important;
+}
+
+[data-bs-theme="dark"] .table {
+    --bs-table-bg: transparent;
+    --bs-table-color: #e2e8f0;
+    --bs-table-border-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-bs-theme="dark"] .table-light {
+    --bs-table-bg: #162d24 !important;
+    --bs-table-color: #f8fafc !important;
+}
+
+[data-bs-theme="dark"] .form-control {
+    background-color: #162d24 !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    color: #f8fafc !important;
+}
+
+[data-bs-theme="dark"] .form-control:focus {
+    border-color: var(--spark-lime) !important;
+    box-shadow: 0 0 0 0.25rem rgba(180, 241, 5, 0.2) !important;
+}
+
+[data-bs-theme="dark"] .modal-content {
+    background-color: #12241d !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    color: #f8fafc !important;
+}
+
+[data-bs-theme="dark"] .modal-header,
+[data-bs-theme="dark"] .modal-footer {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-bs-theme="dark"] .border-bottom {
+    border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-bs-theme="dark"] .border-top {
+    border-top-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-bs-theme="dark"] .pagination.pagination-pill,
+[data-bs-theme="dark"] .pagination {
+    background-color: #162d24 !important;
+}
+
+[data-bs-theme="dark"] .pagination.pagination-pill .page-item .page-link,
+[data-bs-theme="dark"] .pagination .page-item .page-link {
+    color: #cbd5e1 !important;
+}
+
+[data-bs-theme="dark"] .pagination.pagination-pill .page-item.disabled .page-link,
+[data-bs-theme="dark"] .pagination .page-item.disabled .page-link {
+    color: #64748b !important;
+}
+
+[data-bs-theme="dark"] .input-group-text {
+    background-color: #162d24 !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    color: #cbd5e1 !important;
+}
+
+[data-bs-theme="dark"] .form-control:disabled,
+[data-bs-theme="dark"] .form-control[readonly] {
+    background-color: #0c1813 !important;
+    color: #94a3b8 !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+
+

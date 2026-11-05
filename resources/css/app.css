@@ -1,0 +1,8 @@
+/* Bootstrap 5 CSS (via npm) */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Bootstrap Icons (via npm) */
+@import "bootstrap-icons/font/bootstrap-icons.min.css";
+
+/* Custom admin styles — loaded AFTER Bootstrap so overrides work */
+@import "./admin.css";
